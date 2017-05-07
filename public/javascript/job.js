@@ -24,6 +24,6 @@ $("#submit-btn").click(function(e) {
         status: status
     };
 
-    $.post("url", formData);
+    $.post("url", formData); //NOTICE: the url need still needs to be specified
 
 });
