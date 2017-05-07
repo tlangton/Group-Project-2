@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Entry</title>
     <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
 </head>
 
 <body>
@@ -20,39 +22,45 @@
             </div>
             <div class="field">
                 <label for="">
+                    Company's Telephone Number
+                    </label>
+                <input type="text" name="company_telephone" placeholder="Company's Telephone Number" id="company_telephone_input">
+            </div>
+            <div class="field">
+                <label for="">
                     Position
                     </label>
-                <input type="text" name="postion" placeholder="postion" id="postion_input">
+                <input type="text" name="postion" placeholder="Postion" id="postion_input">
             </div>
             <div class="field">
                 <label for="">
                     Location
                     </label>
-                <input type="text" name="location" placeholder="location" id="location_input">
+                <input type="text" name="location" placeholder="Location" id="location_input">
             </div>
             <div class="field">
                 <label for="">
                     Email Address
                     </label>
-                <input type="text" name="email" placeholder="email" id="email_input">
+                <input type="text" name="email" placeholder="Email Address" id="email_input">
             </div>
             <div class="field">
                 <label for="">
                     Job Description
                     </label>
-                <input type="text" name="job_description" placeholder="job_description" id="job_description_input">
+                <input type="text" name="job_description" placeholder="Job Description" id="job_description_input">
             </div>
             <div class="field">
                 <label for="">
-                    Miscellaneous Infomration
+                    Additional Infomration
                     </label>
-                <input type="text" name="miscellaneous" placeholder="miscellaneous" id="miscellaneous_input">
+                <input type="textarea" name="additional_info" placeholder="Additional Infomration" id="additional_info_input">
             </div>
             <div class="field">
                 <label for="">
-                    Job Number
+                    Job Reference Number
                     </label>
-                <input type="text" name="job_number" placeholder="job_number" id="job_number_input">
+                <input type="text" name="job_number" placeholder="Job Reference Number" id="job_number_input">
             </div>
             <div class="field">
                 <label for="">
@@ -66,7 +74,7 @@
                     <option value="">Job Accepted</option>
                 </select>
             </div>
-            <input type="submit">
+            <input type="submit"> <input type="submit" value="Update">
         </form>
     </div>
     <script src="javascript/job.js" type="text/javascript"></script>
