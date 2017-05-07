@@ -1,5 +1,3 @@
-var btn = $("#submit-btn");
-
 $("#submit-btn").click(function(e) {
     e.preventDefault();
 
