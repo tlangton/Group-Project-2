@@ -29,5 +29,3 @@ submitBtn.click(function(e) {
     $.post("url", formData); //NOTICE: the url need still needs to be specified
 
 });
-
-var
