@@ -1,6 +1,7 @@
-$("#submit-btn").click(function(e) {
-    e.preventDefault();
+var submitBtn = $("#submit-btn");
 
+submitBtn.click(function(e) {
+    e.preventDefault();
 
     // get values from the form
     var companyName = $("#company-name-input").val().trim(),
@@ -28,3 +29,5 @@ $("#submit-btn").click(function(e) {
     $.post("url", formData); //NOTICE: the url need still needs to be specified
 
 });
+
+var
