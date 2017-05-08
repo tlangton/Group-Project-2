@@ -24,6 +24,7 @@ $("#submit-btn").click(function(e) {
         status: status
     };
 
+    // send data to the database
     $.post("url", formData); //NOTICE: the url need still needs to be specified
 
 });
