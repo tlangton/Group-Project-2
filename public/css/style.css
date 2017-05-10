@@ -1,3 +1,13 @@
-:root {
-    box-sizing: border-box;
+header {
+    height: 15%;
+    background-color: lightblue;
+}
+
+footer {
+    height: 15%;
+    background-color: lightblue;
+}
+
+.form-container {
+    margin: 5% auto;
 }

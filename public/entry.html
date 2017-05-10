@@ -14,71 +14,84 @@
 </head>
 
 <body>
-    <div class="main-container col-md-12">
-        <header class="col-md-12">
-            Header
-        </header>
+
+    <header class="col-md-12">
+        <div class="col-md-12">
+            <h1>Title</h1>
+        </div>
+    </header>
+    <div class="main-container">
         <!-- Bootstrap CSS 3.3.7 -->
-        <form action="#" method="post" class="ui form">
-            <div class="field">
-                <label for="">
+        <div class="form-container col-md-12">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6">
+                <form action="#" method="post" class="ui form">
+                    <div class="field">
+                        <label for="">
                     Company Name
                     </label>
-                <input type="text" name="company-name" placeholder="Company Name" id="company-name-input">
-            </div>
-            <div class="field">
-                <label for="">
+                        <input type="text" name="company-name" placeholder="Company Name" id="company-name-input">
+                    </div>
+                    <div class="field">
+                        <label for="">
                     Position
                     </label>
-                <input type="text" name="postion" placeholder="Postion" id="postion-input">
-            </div>
-            <div class="field">
-                <label for="">
+                        <input type="text" name="postion" placeholder="Postion" id="postion-input">
+                    </div>
+                    <div class="field">
+                        <label for="">
                     Location
                     </label>
-                <input type="text" name="location" placeholder="Location" id="location-input">
-            </div>
-            <div class="field">
-                <label for="">
+                        <input type="text" name="location" placeholder="Location" id="location-input">
+                    </div>
+                    <div class="field">
+                        <label for="">
                     Company's Telephone Number
                     </label>
-                <input type="text" name="company-telephone" placeholder="Company's Telephone Number" id="company-telephone-input">
-            </div>
-            <div class="field">
-                <label for="">
+                        <input type="text" name="company-telephone" placeholder="Company's Telephone Number" id="company-telephone-input">
+                    </div>
+                    <div class="field">
+                        <label for="">
                     Email Address
                     </label>
-                <input type="text" name="email" placeholder="Email Address" id="email-input">
-            </div>
+                        <input type="text" name="email" placeholder="Email Address" id="email-input">
+                    </div>
 
-            <div class="field">
-                <label for="">
+                    <div class="field">
+                        <label for="">
                     Job Description
                     </label>
-                <input type="text" name="job-description" placeholder="Job Description" id="job-description-input">
-            </div>
-            <div class="field">
-                <label for="">
+                        <input type="text" name="job-description" placeholder="Job Description" id="job-description-input">
+                    </div>
+                    <div class="field">
+                        <label for="">
                     Job Reference Number
                     </label>
-                <input type="text" name="job-number" placeholder="Job Reference Number" id="job-number-input">
-            </div>
-            <div class="field">
-                <label for="">
+                        <input type="text" name="job-number" placeholder="Job Reference Number" id="job-number-input">
+                    </div>
+                    <div class="field">
+                        <label for="">
                     Job Application Status
                     </label>
-                <select id="application-status">
+                        <select id="application-status">
                     <option value="">No Response Yet</option>
                     <option value="">Response Recieved (Contacted by Employer)</option>
                     <option value="">Interview Offered</option>
                     <option value="">Employment Offered</option>
                     <option value="">Job Accepted</option>
                 </select>
+                    </div>
+                    <input type="submit"> <input type="submit" value="Update">
+                </form>
             </div>
-            <input type="submit"> <input type="submit" value="Update">
-        </form>
-        <footer>Footer</footer>
+            <div class="col-md-3">
+
+            </div>
+        </div>
     </div>
+    <footer class="col-md-12">Footer</footer>
     <script src="javascript/job.js" type="text/javascript"></script>
 </body>
 
