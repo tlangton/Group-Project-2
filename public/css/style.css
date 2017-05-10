@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 30vh auto 10vh;
+}
