@@ -11,3 +11,9 @@ footer {
 .form-container {
     margin: 5% auto;
 }
+
+.navButton {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
