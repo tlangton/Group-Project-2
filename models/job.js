@@ -10,10 +10,10 @@ module.exports = function(sequelize, DataTypes) {
       job_description: DataTypes.STRING,
       job_number: DataTypes.STRING,
       miscellaneous: DataTypes.STRING,
-      application_status: DataTypes.STRING,
-      userKey: DataTypes.INTEGER
+      application_status: DataTypes.STRING
     },
     {
+      timestamps: false,
       classMethods: {
         associate: function(models) {
           Job.belongsTo(models.User, {
