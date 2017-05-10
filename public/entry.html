@@ -20,53 +20,29 @@
         </header>
         <section class="main-content">
             <form action="#" method="post" class="ui form">
+
+                <!--Company Information-->
                 <div class="field">
-                    <label>
-                    Company Name
-                    </label>
-                    <input type="text" name="company-name" placeholder="Company Name" id="company-name-input">
-                </div>
-                <div class="field">
-                    <label>
-                    Position
-                    </label>
-                    <input type="text" name="postion" placeholder="Postion" id="postion-input">
-                </div>
-                <div class="field">
-                    <label>
-                    Location
-                    </label>
+                    <h4 class="ui dividing header">About Company</h4>
+                    <label for="company-name-input">Company Name</label> <input type="text" name="company-name" placeholder="Company Name" id="company-name-input">
                     <input type="text" name="location" placeholder="Location" id="location-input">
-                </div>
-                <div class="field">
-                    <label>
-                    Company's Telephone Number
-                    </label>
-                    <input type="text" name="company-telephone" placeholder="Company's Telephone Number" id="company-telephone-input">
-                </div>
-                <div class="field">
-                    <label>
-                    Email Address
-                    </label>
+                    <input type="text" name="company-telephone" placeholder="Telephone Number" id="company-telephone-input">
                     <input type="text" name="email" placeholder="Email Address" id="email-input">
                 </div>
 
+                <!--Job Information-->
                 <div class="field">
-                    <label>
-                    Job Description
-                    </label>
-                    <input type="text" name="job-description" placeholder="Job Description" id="job-description-input">
-                </div>
-                <div class="field">
-                    <label>
-                    Job Reference Number
-                    </label>
+                    <h4 class="ui dividing header">Job Information</h4>
+                    <input type="text" name="postion" placeholder="Postion" id="postion-input">
                     <input type="text" name="job-number" placeholder="Job Reference Number" id="job-number-input">
+                    <input type="text" name="job-description" placeholder="Job Description" id="job-description-input">
+                    <!--add js code for input below-->
+                    <input type="text" name="job-requirements" id="job-requirements" placeholder="Job Reqirements">
                 </div>
+
+                <!--Job Status-->
                 <div class="field">
-                    <label>
-                    Job Application Status
-                    </label>
+                    <h4 class="ui dividing header">Job Application Status</h4>
                     <select id="application-status">
                     <option value="">No Response Yet</option>
                     <option value="">Response Recieved (Contacted by Employer)</option>
@@ -75,7 +51,8 @@
                     <option value="">Job Accepted</option>
                 </select>
                 </div>
-                <input type="submit" value="Record Application"> //Needs a proper value
+                <input type="submit" value="Record Application" class="ui button blue">
+                <!--Needs a proper value-->
                 <input type="submit" value="Update">
             </form>
         </section>
