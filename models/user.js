@@ -1,19 +1,25 @@
-'use strict';
+"use strict";
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define('User', {
+  var User = sequelize.define(
+    "User",
+    {
       first_name: DataTypes.STRING,
       last_name: DataTypes.STRING,
       user_name: DataTypes.STRING,
       password: DataTypes.STRING
-    }, {
+    },
+    {
+      timestamps: false,
+
       classMethods: {
         associate: function(models) {
-          User.hasMany(models.Job,{
+          User.hasMany(models.Job, {
             // associations can be defined here
             onDelete: "cascade"
           });
+        }
       }
     }
-  });
-return User;
+  );
+  return User;
 };
