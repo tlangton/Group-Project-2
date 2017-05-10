@@ -1,8 +1,86 @@
-* {
+:root {
     box-sizing: border-box;
+    font-size: 17;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+
+/*==========
+main.contianer 
+===========*/
+
 .main-container {
+    /*height: 100vh;
     display: grid;
-    grid-template-rows: 30vh auto 10vh;
+    grid-template-rows: [first-row-line header-start] 30vh [header-end main-content-start] auto [main-content-end footer-start] 18vh [last-row-line footer-end];
+    grid-gap: 1.5%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*==========
+header
+===========*/
+
+header {
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #3498DB;
+    height: 30vh;
+    width: 100%;
+    margin: 0 0 1.5% 0;
+}
+
+
+/*===Site Name===*/
+
+header h1 {
+    font-size: 300%;
+    color: #fff;
+}
+
+
+/*==========
+.main-content
+===========*/
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*====form=====*/
+
+form {
+    background: #ECF0F1;
+    padding: 3rem;
+    border: 1px solid #3498DB;
+    border-radius: 4px;
+    width: 60%;
+    /*width: 50%;*/
+}
+
+
+/*.field {
+    display: flex;
+    flex-flow: column;
+}*/
+
+
+/*==========
+footer
+===========*/
+
+footer {
+    background: #3498DB;
+    height: 18vh;
+    width: 100%;
+    margin: 1.5% 0 0 0;
 }
