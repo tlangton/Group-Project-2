@@ -67,6 +67,9 @@ form {
     font-size: 1rem;
     vertical-align: baseline;
     width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 input[type=text] {
@@ -93,6 +96,23 @@ input[type=text] {
 
 select {
     margin-bottom: 7%;
+    display: block;
+    height: auto;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 0 transparent inset;
+    padding: .62em 1em;
+    color: rgba(0, 0, 0, .87);
+    -webkit-transition: color .1s ease, border-color .1s ease;
+    transition: color .1s ease, border-color .1s ease;
+}
+
+.form-group1 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
 }
 
 
