@@ -2,7 +2,6 @@ var submitBtn = $("#submit-btn");
 
 submitBtn.click(function(e) {
     e.preventDefault();
-
     // get values from the form
     var companyName = $("#company-name-input").val().trim(),
         telephoneNum = $("#company-telephone-input").val().trim(),
@@ -24,8 +23,6 @@ submitBtn.click(function(e) {
         additionalInfo: additionalInfo,
         status: status
     };
-
     // send data to the database
     $.post("url", formData); //NOTICE: the url need still needs to be specified
-
 });
