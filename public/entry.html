@@ -6,67 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Entry</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
     <link rel="stylesheet" type="text/css" href="../public/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
 </head>
 
 <body>
+
     <div class="main-container">
-        <form action="#" method="post">
-            <div class="field">
-                <label for="">
-                    Company Name
-                    </label>
-                <input type="text" name="company-name" placeholder="Company Name" id="company-name-input">
-            </div>
-            <div class="field">
-                <label for="">
-                    Company's Telephone Number
-                    </label>
-                <input type="text" name="company-telephone" placeholder="Company's Telephone Number" id="company-telephone-input">
-            </div>
-            <div class="field">
-                <label for="">
-                    Position
-                    </label>
-                <input type="text" name="postion" placeholder="Postion" id="position-input">
-            </div>
-            <div class="field">
-                <label for="">
-                    Location
-                    </label>
-                <input type="text" name="location" placeholder="Location" id="location-input">
-            </div>
-            <div class="field">
-                <label for="">
-                    Email Address
-                    </label>
-                <input type="text" name="email" placeholder="Email Address" id="email-input">
-            </div>
-            <div class="field">
-                <label for="">
-                    Job Description
-                    </label>
-                <input type="text" name="job-description" placeholder="Job Description" id="job-description-input">
+
+        <header>
+            <h1>Site Name</h1>
+        </header>
+
+        <!--The content area-->
+        <section class="main-content">
+
+            <!--navigation bar on the left-->
+
+            <div class="ui secondary vertical pointing menu">
+                <a class="item">
+                    View Jobs
+                    </a>
+                <a class="item">
+                        Create New Application Record
+                    </a>
+                <a class="item active">
+                        Coming Soon
+                    </a>
             </div>
 
-            <div class="field">
-                <label for="">
-                    Job Reference Number
-                    </label>
-                <input type="text" name="job-number" placeholder="Job Reference Number" id="job-number-input">
-            </div>
-            <div class="field">
-                <label for="">
-                    Additional Information
-                    </label>
-                <textarea id="additional-info-input" name="additional-info" placeholder="Additional Information" cols="30" rows="10"></textarea>
-            </div>
-            <div class="field">
-                <label for="">
-                    Job Application Status
-                    </label>
+            <!--centered form element -->
+            <form class="ui mini form">
+                <h4 class="ui dividing header">Employer Information</h4>
+                <div class="field">
+                    <label>Company Name</label>
+                    <input type="text" name="company-name" placeholder="Company Name" id="company-name-input">
+                </div>
+                <div class="field">
+                    <label>Location</label>
+                    <input type="text" name="location" placeholder="Location" id="location-input">
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Telephone Number</label>
+                        <input type="tel" name="company-telephone" placeholder="Telephone Number" id="company-telephone-input">
+                    </div>
+                    <div class="field">
+                        <label>Email Address</label>
+                        <input type="text" name="email" placeholder="Email Address" id="email-input">
+                    </div>
+                </div>
+                <h4 class="ui dividing header">Job Information</h4>
+                <div class="field">
+                    <label>Postion</label>
+                    <input type="text" name="postion" placeholder="Postion" id="position-input">
+                </div>
+                <div class="field">
+                    <label>Job Reference Number</label>
+                    <input type="text" name="job-number" placeholder="Job Reference Number" id="job-number-input">
+                </div>
+                <div class="field">
+                    <label>Job Description</label>
+                    <textarea style="height: 87px;" name="job-description" placeholder="Job Description" id="job-description-input"></textarea>
+                </div>
+                <div class="field">
+                    <label>Job Reqirements</label>
+                    <textarea style="height: 87px;" name="job-requirements" id="job-requirements-input" placeholder="Job Reqirements"></textarea>
+                </div>
+
+                <h4 class="ui dividing header">Job Application Status</h4>
                 <select id="application-status">
                     <option value="No Response Yet">No Response Yet</option>
                     <option value="Response Recieved">Response Recieved (Contacted by Employer)</option>
@@ -74,10 +85,28 @@
                     <option value="Employment Offered">Employment Offered</option>
                     <option value="Job Accepted">Job Accepted</option>
                 </select>
+                <!--<div class="ui blue basic button" id="submit-btn">Submit Job Info</div>-->
+                <div class="ui animated basic button blue" tabindex="0" id="submit-btn">
+                    <div class="visible content">Save to Hunting List</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </div>
+            </form>
+            <!--This is where items the job items are displayed after the form's display property is set to none-->
+            <div class="display-area">
+                Display-Area
             </div>
-            <input type="submit" id="submit-btn"> <input type="submit" value="Update" id="update-btn">
-        </form>
+            <aside>
+                Aside
+            </aside>
+            <!--end of section for main content-->
+        </section>
+
+        <!--footer to the buttom of the screen-->
+        <footer>Footer</footer>
     </div>
+
     <script src="javascript/job.js" type="text/javascript"></script>
 </body>
 
