@@ -10,14 +10,16 @@ main.contianer
 ===========*/
 
 .main-container {
-    /*height: 100vh;
+    height: 100vh;
     display: grid;
-    grid-template-rows: [first-row-line header-start] 30vh [header-end main-content-start] auto [main-content-end footer-start] 18vh [last-row-line footer-end];
-    grid-gap: 1.5%;*/
-    display: flex;
+    grid-template-rows: [first-row-line header-start] 22vh [header-end main-content-start] auto [main-content-end footer-start] 10vh [last-row-line footer-end];
+    grid-gap: 1.5%;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 100vh;*/
+    background-image: url("public/images/aaron-burden-183659.jpg");
 }
 
 
@@ -26,14 +28,13 @@ header
 ===========*/
 
 header {
-    grid-row: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: #3498DB;
-    height: 30vh;
+    /*height: 22vh;*/
     width: 100%;
-    margin: 0 0 1.5% 0;
+    /*margin: 0 0 1.5% 0;*/
 }
 
 
@@ -51,68 +52,37 @@ header h1 {
 ===========*/
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: auto 49vw auto;
 }
 
 
 /*====form=====*/
 
-form {
-    background: #ECF0F1;
-    padding: 3rem;
-    border-radius: 4px;
-    width: 60%;
-    font-size: 1rem;
-    vertical-align: baseline;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+#submit-btn {
+    margin-top: 2%;
 }
 
-input[type=text] {
-    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    margin: 2%;
-    outline: 0;
-    -webkit-appearance: none;
-    line-height: 1.21428571em;
-    padding: .67857143em 1em;
-    font-size: 1em;
-    background: #FFF;
-    border: 1px solid rgba(34, 36, 38, .15);
-    color: rgba(0, 0, 0, .87);
-    border-radius: .28571429rem;
-    box-shadow: 0 0 0 0 transparent inset;
-    -webkit-transition: color .1s ease, border-color .1s ease;
-    transition: color .1s ease, border-color .1s ease;
+
+/*========Dislay========*/
+
+.display-area {
+    height: 100%;
+    display: none;
 }
 
-.field {
-    display: flex;
-    flex-flow: column;
+
+/*=======nav=======*/
+
+nav {
+    /*background-color: beige;*/
 }
 
-select {
-    margin-bottom: 7%;
-    display: block;
-    height: auto;
-    width: 100%;
-    background: #FFF;
-    border: 1px solid rgba(34, 36, 38, .15);
-    border-radius: .28571429rem;
-    box-shadow: 0 0 0 0 transparent inset;
-    padding: .62em 1em;
-    color: rgba(0, 0, 0, .87);
-    -webkit-transition: color .1s ease, border-color .1s ease;
-    transition: color .1s ease, border-color .1s ease;
-}
 
-.form-group1 {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
+/*======aside======*/
+
+aside {
+    /*background: darkcyan;*/
 }
 
 
@@ -122,7 +92,7 @@ footer
 
 footer {
     background: #3498DB;
-    height: 18vh;
+    /*height: 18vh;*/
     width: 100%;
     margin: 1.5% 0 0 0;
 }
