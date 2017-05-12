@@ -1,28 +1,57 @@
-var submitBtn = $("#submit-btn");
+var displayArea = $(".display-area");
+displayArea.hide();
 
-submitBtn.click(function(e) {
+
+var submitBtn = $("#submit-btn").click((e) => {
     e.preventDefault();
     // get values from the form
-    var companyName = $("#company-name-input").val().trim(),
-        telephoneNum = $("#company-telephone-input").val().trim(),
-        position = $("#position-input").val().trim(),
-        location = $("#location-input").val().trim(),
-        email = $("#email-input").val().trim(),
-        jobDescription = $("#job-description-input").val().trim(),
-        additionalInfo = $("#additional-info-input").val().trim(),
-        status = $("select").find(":selected").val();
+    var companyName = document.querySelector("#company-name-input").value.trim(),
+        location = document.querySelector("#location-input").value.trim(),
+        telephone = document.querySelector("#company-telephone-input").value.trim(),
+        email = document.querySelector("#email-input").value.trim(),
+        position = document.querySelector("#position-input").value.trim(),
+        jobNumber = document.querySelector("#job-number-input").value.trim(),
+        jobDescription = document.querySelector("#job-description-input").value.trim(),
+        jobRequirements = document.querySelector("#job-requirements-input").value.trim(),
+        status = $("select").find(":selected").text();
 
     // store form values in inside of an object
     var formData = {
         companyName: companyName,
-        telephoneNum: telephoneNum,
-        position: position,
         location: location,
+        telephone: telephone,
         email: email,
+        position: position,
+        jobNumber: jobNumber,
         jobDescription: jobDescription,
-        additionalInfo: additionalInfo,
+        jobRequirements: jobRequirements,
         status: status
     };
+
+    // prevent empty forms from submitting
+    if (!formData.companyName) {
+
+        alert("Company Name is empty");
+        return console.log("Nothing");
+    }
+
+    if (!formData.position) {
+
+        alert("No Position Specified");
+        return console.log("no position");
+    }
     // send data to the database
-    $.post("url", formData); //NOTICE: the url need still needs to be specified
+    // $.post("url", formData); //NOTICE: the url need still needs to be specified
+
+    // hide form and replace with display-area
+    $("form").fadeOut(() => {
+        $("form").css("display", "none");
+        displayArea.fadeIn();
+    });
+
+    // empty all form inputs
+    $("input").val("");
+    $("textarea").val("");
+
+    console.log(formData);
 });
