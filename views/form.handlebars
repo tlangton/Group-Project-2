@@ -1,0 +1,79 @@
+<!--centered form element -->
+<form action="/jobs/create" method="POST">
+    <div class="field">
+        <label class="label">Company Name</label>
+        <p class="control has-icons-left">
+        <input type="text" name="company" placeholder="Example: Microsoft" id="company-name-input" class="input">
+        <span class="icon is-small is-left">
+                <i class="fa fa-building"></i>
+                </span>
+    </div>
+    <div class="field">
+        <label class="label">Location</label>
+        <p class="control has-icons-left">
+        <input type="text" name="location" placeholder="Location" id="location-input" class="input">
+        <span class="icon is-small is-left">
+                <i class="fa fa-map-marker"></i>
+                </span>
+    </div>
+    <div class="two fields">
+        <div class="field">
+            <label class="label">Telephone Number</label>
+            <p class="control has-icons-left">
+                <input type="tel" name="telephone" placeholder="Telephone Number" id="company-telephone-input" class="input is-2">
+                <span class="icon is-small is-left">
+                <i class="fa fa-phone"></i>
+                </span>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label">Email</label>
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Email" id="email-input" name="email">
+                <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="field">
+        <label class="label ">Postion</label>
+        <input type="text" name="postion" placeholder="Postion" id="position-input" class="input">
+    </div>
+    <div class="field">
+        <label class="label">Job Reference Number</label>
+        <input type="text" name="jobNum" placeholder="Job Reference Number" id="job-number-input" class="input" class="input">
+    </div>
+    <div class="field">
+        <label class="label">Job Description</label>
+        <textarea style="height: 87px;" name="jobDescription" placeholder="Job Description" id="job-description-input" class="textarea"></textarea>
+    </div>
+    <div class="field">
+        <label class="label">Job Requirements</label>
+        <textarea style="height: 87px;" name="requirements" id="job-requirements-input" placeholder="Job Reqirements" class="textarea"></textarea>
+    </div>
+    <div class="field">
+        <label class="label">Additonal Infomation</label>
+        <textarea style="height: 87px;" name="additionalInfo" id="job-requirements-input" placeholder="Job Reqirements" class="textarea"></textarea>
+    </div>
+
+    <label class="label">Job Application Status</label>
+    <span class="select">
+                <select id="application-status" name="status">
+                    <option value="No Response Yet">No Response Yet</option>
+                    <option value="Response Recieved">Response Recieved (Contacted by Employer)</option>
+                    <option value="Interview Offered">Interview Offered</option>
+                    <option value="Employment Offered">Employment Offered</option>
+                    <option value="Job Accepted">Job Accepted</option>
+                </select>
+                </span>
+    <!--<div class="ui blue basic button" id="submit-btn">Submit Job Info</div>-->
+    {{!--
+    <div class="ui animated basic button blue" tabindex="0" id="submit-btn">
+        <div class="visible content">Save to Hunting List</div>
+        <div class="hidden content">
+            <i class="right arrow icon"></i>
+        </div>
+    </div>--}}
+    <button class="is-primary button blue">Submit</button>
+</form>

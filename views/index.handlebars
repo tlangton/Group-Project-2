@@ -1,0 +1,21 @@
+
+
+{{#each results}}
+<div class="content-wapper">
+   <h1 class="primary-title">{{this.position}} </h1>
+   <h2 class="secondary-title">{{this.company_name}} </h2>
+   <div class="com-info">
+       <h3>Employer's Contact Information</h>
+       <p class="p-tag"><span class="con-info">Email Address: </span>{{this.email}} </p>
+       <p class="p-tag"><span class="con-info">Telephone Number: </span>{{this.job_number}} </p>
+   </div>
+   <div class="job-info">
+
+    <p><span class="tri-title">Job Description - </span>{{this.job_description}} </p>
+    <p><span class="tri-title">Job Requirements - </span>{{this.job_requirements}} </p>
+    {{!--<p><span class="tri-title">Additional Information - </span>{{this.additional_info}} </p>--}}
+    <i class="fa fa-trash-o" aria-hidden="true"></i>
+   </div>
+</div>
+
+{{/each}}

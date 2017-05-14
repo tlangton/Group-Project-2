@@ -1,0 +1,40 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Hunt Assitant</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery.js"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/colorize.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/"> <i class="fa fa-home" aria-hidden="true">Home</i></a>
+</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main-content">
+      <nav>
+      <a href="/form"><div class="add-job"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+Add Job to the Hunt </div></a>
+      </nav>
+      <div class="display">
+      {{{body}}}
+      </div>
+      <aside>Aside</aside>
+    </section>
+    <footer>Footer</footer>
+  </div>
+</body>
+
+</html>

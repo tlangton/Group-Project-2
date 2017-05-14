@@ -1,3 +1,1 @@
-# Group-Project-2
-
-A great project!
+# personal-sequelize-project
